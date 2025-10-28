@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aggieland Monday 2026 | Texas A&M University</title>
+  <meta name="description" content="Experience the Spirit of Aggieland on May 18, 2026 — campus tours, student panels, and Texas A&M traditions for accepted and prospective students." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --maroon:#500000; /* TAMU Maroon */
+      --dark:#231f20;   /* Near-black for text */
+      --silver:#c2c1c1; /* TAMU Silver */
+      --bg:#f7f7f7;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; color:var(--dark); background:var(--bg)}
+    a{color:var(--maroon);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    /* Header */
+    .nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #eee}
+    .container{max-width:1100px;margin:auto;padding:0 20px}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{display:flex;gap:12px;align-items:center;font-weight:800;color:var(--maroon)}
+    .brand .logo{width:32px;height:32px;border-radius:6px;background:var(--maroon);display:grid;place-items:center;color:#fff;font-size:14px}
+    .nav a.btn{padding:10px 14px;border:2px solid var(--maroon);border-radius:999px;font-weight:600}
+    .nav a.btn.primary{background:var(--maroon);color:#fff}
+
+    /* Hero */
+    .hero{position:relative}
+    .hero img{width:100%;height:58vh;object-fit:cover;display:block;filter:contrast(1.05)}
+    .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.35) 35%, rgba(0,0,0,.55));}
+    .hero-content{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:0 20px;color:#fff}
+    .hero h1{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:0 0 10px}
+    .hero p{font-size:clamp(1rem,2vw,1.125rem);opacity:.95;margin:0 0 22px}
+    .pill{display:inline-block;padding:10px 16px;border-radius:999px;border:2px solid #fff;font-weight:700;letter-spacing:.2px}
+
+    /* Sections */
+    section{padding:64px 0}
+    h2{font-size:clamp(1.5rem,2.6vw,2rem);margin:0 0 18px;color:var(--maroon)}
+    .lead{font-size:1.05rem;color:#444;max-width:760px}
+
+    /* Schedule */
+    .grid{display:grid;gap:16px}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    @media (max-width:900px){.grid.cols-3{grid-template-columns:1fr 1fr}}
+    @media (max-width:640px){.grid.cols-3{grid-template-columns:1fr}}
+    .card{background:#fff;border:1px solid #eee;border-radius:16px;padding:18px 18px 16px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+    .time{font-weight:800;color:var(--maroon);font-size:.95rem}
+    .item{padding:12px 12px;border:1px solid #f0f0f0;border-radius:12px;background:#fff}
+
+    /* CTA banner */
+    .cta{background:var(--maroon);color:#fff;border-radius:16px;padding:24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px}
+    .cta a{background:#fff;color:var(--maroon);border-radius:10px;padding:12px 16px;font-weight:800}
+
+    /* FAQ */
+    details{background:#fff;border:1px solid #eee;border-radius:12px;padding:16px}
+    details+details{margin-top:10px}
+    summary{cursor:pointer;font-weight:700;color:var(--maroon)}
+
+    /* Footer */
+    footer{background:#fff;border-top:1px solid #eee;padding:32px 0;margin-top:40px}
+    .small{font-size:.92rem;color:#666}
+    .badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+    .badge{background:var(--silver);color:#222;padding:6px 10px;border-radius:999px;font-weight:600;font-size:.85rem}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">
+        <span class="logo">A&M</span>
+        <span>Aggieland Monday 2026</span>
+      </a>
+      <nav style="display:flex;gap:12px;align-items:center">
+        <a href="#schedule">Schedule</a>
+        <a href="#info">About</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn" href="#contact">Contact</a>
+        <a class="btn primary" href="#register">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <!-- Replace the src below with your own image if hosting elsewhere. If you downloaded the image I provided, rename it to 'aggieland-hero.jpg' and keep this path. -->
+    <img src="aggieland-hero.jpg" alt="Students on the Texas A&M campus" />
+    <div class="hero-content">
+      <div>
+        <div class="pill">May 18, 2026 • College Station, TX</div>
+        <h1>Experience the Spirit of Aggieland</h1>
+        <p>Campus tours, student panels, and Texas A&M traditions — designed for accepted students (Fall 2026) and prospective students (Fall 2027).</p>
+        <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+          <a class="btn primary" href="#register" style="border-color:#fff">Register Now</a>
+          <a class="btn" href="#schedule" style="background:transparent;color:#fff;border-color:#fff">View Schedule</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="info">
+    <div class="container">
+      <h2>Welcome to Aggieland</h2>
+      <p class="lead">Join us for a full day at Texas A&M University to explore academic programs, meet current students, tour residence halls, and learn about our rich traditions. Discover why so many future Aggies say this is where they first felt at home.</p>
+      <div class="badges">
+        <span class="badge">Campus Tours</span>
+        <span class="badge">Student Life Fair</span>
+        <span class="badge">Residence Halls</span>
+        <span class="badge">Corps of Cadets Showcase</span>
+        <span class="badge">Yell Practice Preview</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule">
+    <div class="container">
+      <h2>Schedule Highlights</h2>
+      <div class="grid cols-3">
+        <div class="item">
+          <div class="time">8:30 AM</div>
+          <div class="card"><strong>Check-in</strong> at the Memorial Student Center (MSC)</div>
+        </div>
+        <div class="item">
+          <div class="time">9:00 AM</div>
+          <div class="card"><strong>Welcome Session</strong> with University Ambassadors</div>
+        </div>
+        <div class="item">
+          <div class="time">10:30 AM</div>
+          <div class="card"><strong>Guided Campus Tours</strong> — Academic or Residential focus</div>
+        </div>
+        <div class="item">
+          <div class="time">12:00 PM</div>
+          <div class="card"><strong>Lunch</strong> at Sbisa Dining Hall</div>
+        </div>
+        <div class="item">
+          <div class="time">1:30 PM</div>
+          <div class="card"><strong>Academic & Student Life Fair</strong> (MSC)</div>
+        </div>
+        <div class="item">
+          <div class="time">3:30 PM</div>
+          <div class="card"><strong>Corps of Cadets Showcase</strong> & Traditions Walk</div>
+        </div>
+        <div class="item">
+          <div class="time">5:00 PM</div>
+          <div class="card"><strong>Closing Ceremony</strong> & Yell Practice Preview</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container cta" id="register">
+      <div>
+        <h2 style="color:#fff;margin:0 0 6px">Ready to Join Us?</h2>
+        <p style="margin:0;opacity:.9">Reserve your spot for Aggieland Monday 2026. Seats are limited.</p>
+      </div>
+      <a href="#" aria-label="Register for Aggieland Monday">Register at visit.tamu.edu/aggielandmonday</a>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="container">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Who should attend?</summary>
+        <p>Accepted students for Fall 2026 and prospective students for Fall 2027 — plus families and supporters.</p>
+      </details>
+      <details>
+        <summary>Where is check-in?</summary>
+        <p>Check-in begins at 8:30 AM at the Memorial Student Center (MSC), Rudder Plaza side.</p>
+      </details>
+      <details>
+        <summary>Parking & accessibility</summary>
+        <p>Visitor parking is available in campus garages near the MSC. Accessibility accommodations are available — please indicate needs during registration.</p>
+      </details>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="lead">Questions about Aggieland Monday? We’re here to help.</p>
+      <ul>
+        <li><strong>Email:</strong> aggielandmonday@tamu.edu</li>
+        <li><strong>Phone:</strong> 979-845-3211</li>
+        <li><strong>Follow:</strong> @TAMU on Instagram, Facebook, and X</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container small">
+      <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+        <div>© 2026 Texas A&M University • Division of Marketing & Communications</div>
+        <div>Branding follows Texas A&M guidelines (colors, tone, typography).</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
